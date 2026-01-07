@@ -11,7 +11,7 @@ try:
     from utils.rate_limiter  import check_limit
     from utils.report import generate_report
 except Exception as e:
-    st.error("⚠️ Backend modules not found. Ensure 'auth', 'utils' folders exist.")
+    st.error(e)
     st.stop()
 
 st.set_page_config(
